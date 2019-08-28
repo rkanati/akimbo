@@ -1,0 +1,13 @@
+
+
+
+Ref.  Qty.      Description                             Mfgr. Code              Mfgr.
+----- --------- --------------------------------------- ----------------------- --------
+U1    1         ATmega32U4 μC                           ATMEGA32U4-AU           Microchip
+U2    1         MCP23017 I²C I/O Expander               MCP23017T-E/SO I        Microchip
+J1    1         USB mini-B socket, SMD                  UJ2-MBH-1-SMT-TR        CUI
+J2-3  2         3.5mm TRRS socket, SMD, no switches     SJ2-3574A-SMT-TR        CUI
+K1-30 28        Cherry MX compatible switches           -                       -
+D1-30 28        1N4148 signal diode (or equiv. DO-35)   -                       -
+
+
