@@ -3,11 +3,16 @@
 
 Ref.  Qty.      Description                             Mfgr. Code              Mfgr.
 ----- --------- --------------------------------------- ----------------------- --------
-U1    1         ATmega32U4 μC                           ATMEGA32U4-AU           Microchip
-U2    1         MCP23017 I²C I/O Expander               MCP23017T-E/SO I        Microchip
-J1    1         USB mini-B socket, SMD                  UJ2-MBH-1-SMT-TR        CUI
-J2-3  2         3.5mm TRRS socket, SMD, no switches     SJ2-3574A-SMT-TR        CUI
-K1-30 28        Cherry MX compatible switches           -                       -
-D1-30 28        1N4148 signal diode (or equiv. DO-35)   -                       -
-
+U1    1         Microcontroller, ATmega32U4             ATMEGA32U4-AU           Microchip
+U2    1         I/O Expander, I²C, MCP23017             MCP23017T-E/SO I        Microchip
+J1    1         Receptacle, USB Type C, THT             USB4085-GF-A            GCT
+J2-3  2         Socket, 3.5mm TRRS, SMD, no switches    SJ2-3574A-SMT-TR        CUI
+K1-30 28        Keyswitch, Cherry MX compatible         -                       -
+D1-30 28        Signal diode, 1N4148 (or equiv. DO-35)  -                       -
+R1-2  2         Resistor, 0805, 22Ω                     -                       -
+R3-4  2         Resistor, 0805, 4.7kΩ                   -                       -
+R5-6  2         Resistor, 0805, 5.1kΩ                   -                       -
+C1    1         Capacitor, Ceramic, 0805, 1μF           -                       -
+C2-3  2         Capacitor, Ceramic, 0805, 12-22pF       -                       -
+Y1    1         Crystal, 4-no leads, 3.2*2.5mm, 16MHz   -                       -
 
