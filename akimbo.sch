@@ -1070,23 +1070,23 @@ $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 5C498A21
-P 4750 4850
-F 0 "#PWR05" H 4750 4600 50  0001 C CNN
-F 1 "GND" H 4750 4700 50  0000 C CNN
-F 2 "" H 4750 4850 50  0001 C CNN
-F 3 "" H 4750 4850 50  0001 C CNN
-	1    4750 4850
+P 5200 4850
+F 0 "#PWR05" H 5200 4600 50  0001 C CNN
+F 1 "GND" H 5200 4700 50  0000 C CNN
+F 2 "" H 5200 4850 50  0001 C CNN
+F 3 "" H 5200 4850 50  0001 C CNN
+	1    5200 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR04
 U 1 1 5C49863E
-P 4750 2000
-F 0 "#PWR04" H 4750 1850 50  0001 C CNN
-F 1 "+5V" H 4750 2140 50  0000 C CNN
-F 2 "" H 4750 2000 50  0001 C CNN
-F 3 "" H 4750 2000 50  0001 C CNN
-	1    4750 2000
+P 5200 2000
+F 0 "#PWR04" H 5200 1850 50  0001 C CNN
+F 1 "+5V" H 5200 2140 50  0000 C CNN
+F 2 "" H 5200 2000 50  0001 C CNN
+F 3 "" H 5200 2000 50  0001 C CNN
+	1    5200 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1809,26 +1809,26 @@ $EndComp
 Wire Wire Line
 	6800 3100 6800 4850
 Wire Wire Line
-	4750 2000 4750 2800
+	5200 2000 5200 2800
 Wire Wire Line
-	4750 3400 4750 4850
+	5200 3400 5200 4850
 Wire Wire Line
-	4750 3100 4800 3100
+	5200 3100 5250 3100
 Wire Wire Line
-	4800 3400 4750 3400
+	5250 3400 5200 3400
 Wire Wire Line
-	4350 3300 4800 3300
+	4350 3300 5000 3300
 Wire Wire Line
-	4350 3200 4800 3200
+	4350 3200 4750 3200
 $Comp
 L akimbo:Conn_TRRS J2
 U 1 1 5C433D7B
-P 5000 3200
-F 0 "J2" H 5000 3400 50  0000 C CNN
-F 1 "3.5mm TRRS" V 5100 3150 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_PJ320D_Horizontal" H 5000 3200 50  0001 C CNN
-F 3 "~" H 5000 3200 50  0001 C CNN
-	1    5000 3200
+P 5450 3200
+F 0 "J2" H 5450 3400 50  0000 C CNN
+F 1 "3.5mm TRRS" V 5550 3150 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_PJ320D_Horizontal" H 5450 3200 50  0001 C CNN
+F 3 "~" H 5450 3200 50  0001 C CNN
+	1    5450 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1899,9 +1899,9 @@ Text Label 6550 2900 0    50   ~ 0
 sck
 Text Label 6550 3000 0    50   ~ 0
 sda
-Text Label 4750 3200 2    50   ~ 0
+Text Label 4600 3200 2    50   ~ 0
 sck
-Text Label 4750 3300 2    50   ~ 0
+Text Label 4600 3300 2    50   ~ 0
 sda
 Wire Wire Line
 	8600 2900 8850 2900
@@ -1973,15 +1973,15 @@ Wire Wire Line
 	4550 4500 4400 4500
 Connection ~ 4400 4500
 Wire Wire Line
-	4350 2800 4750 2800
-Connection ~ 4750 2800
+	4350 2800 5200 2800
+Connection ~ 5200 2800
 Wire Wire Line
-	4750 2800 4750 2900
+	5200 2800 5200 2900
 Wire Wire Line
 	4350 2900 4750 2900
-Connection ~ 4750 2900
+Connection ~ 5200 2900
 Wire Wire Line
-	4750 2900 4750 3100
+	5200 2900 5200 3100
 Wire Wire Line
 	4350 3500 4600 3500
 Text Label 4600 3500 2    50   ~ 0
@@ -2185,4 +2185,46 @@ Wire Notes Line style solid rgb(132, 0, 0)
 	14450 9960 14450 10570
 Text Notes 14490 10530 0    50   ~ 0
 Released subject to the terms of the\nCERN Open Hardware License, v1.2\nSee LICENSE in the git repository for\ndetails
+$Comp
+L Device:R_Small R4
+U 1 1 5D70310F
+P 5000 3050
+F 0 "R4" H 5030 3070 50  0000 L CNN
+F 1 "4k7" H 5030 3010 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5000 3050 50  0001 C CNN
+F 3 "~" H 5000 3050 50  0001 C CNN
+	1    5000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5D703CA4
+P 4750 3050
+F 0 "R3" H 4780 3070 50  0000 L CNN
+F 1 "4k7" H 4780 3010 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4750 3050 50  0001 C CNN
+F 3 "~" H 4750 3050 50  0001 C CNN
+	1    4750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2900 5000 2950
+Connection ~ 5000 2900
+Wire Wire Line
+	5000 2900 5200 2900
+Wire Wire Line
+	4750 2900 4750 2950
+Connection ~ 4750 2900
+Wire Wire Line
+	4750 2900 5000 2900
+Wire Wire Line
+	4750 3150 4750 3200
+Connection ~ 4750 3200
+Wire Wire Line
+	4750 3200 5250 3200
+Wire Wire Line
+	5000 3300 5000 3150
+Connection ~ 5000 3300
+Wire Wire Line
+	5000 3300 5250 3300
 $EndSCHEMATC
