@@ -744,8 +744,7 @@ Wire Wire Line
 Connection ~ 3500 4800
 Wire Wire Line
 	3500 4800 3600 4800
-NoConn ~ 7200 3500
-NoConn ~ 7200 3600
+NoConn ~ 7200 3100
 Wire Wire Line
 	7900 2550 7900 2600
 Wire Wire Line
@@ -764,46 +763,40 @@ Wire Wire Line
 Connection ~ 7150 4500
 Wire Wire Line
 	7150 4500 7150 4850
-Text Label 8850 3200 2    50   ~ 0
-row3
-Text Label 8850 3300 2    50   ~ 0
-row4
-Wire Wire Line
-	8600 3100 8850 3100
-Wire Wire Line
-	8600 3200 8850 3200
-Wire Wire Line
-	8600 3300 8850 3300
-Text Label 8850 4500 2    50   ~ 0
-col0
-Text Label 8850 4200 2    50   ~ 0
-col1
 Text Label 8850 4100 2    50   ~ 0
-col2
-Text Label 8850 4000 2    50   ~ 0
-col3
-Text Label 8850 4300 2    50   ~ 0
-col4
-Text Label 8850 4400 2    50   ~ 0
-col5
-Wire Wire Line
-	8600 4500 8850 4500
-Wire Wire Line
-	8600 4200 8850 4200
-Wire Wire Line
-	8600 4100 8850 4100
+row3
+Text Label 8850 4200 2    50   ~ 0
+row4
 Wire Wire Line
 	8600 4000 8850 4000
 Wire Wire Line
-	8600 4300 8850 4300
+	8600 4100 8850 4100
 Wire Wire Line
-	8600 4400 8850 4400
+	8600 4200 8850 4200
+Text Label 8850 3600 2    50   ~ 0
+col0
+Text Label 8850 3300 2    50   ~ 0
+col1
+Text Label 8850 3200 2    50   ~ 0
+col2
+Text Label 8850 3100 2    50   ~ 0
+col3
+Text Label 8850 3400 2    50   ~ 0
+col4
+Text Label 8850 3500 2    50   ~ 0
+col5
 Wire Wire Line
-	7150 2550 7150 3800
+	8600 3600 8850 3600
 Wire Wire Line
-	7150 3800 7200 3800
-NoConn ~ 8600 3500
-NoConn ~ 8600 3600
+	8600 3300 8850 3300
+Wire Wire Line
+	8600 3200 8850 3200
+Wire Wire Line
+	8600 3100 8850 3100
+Wire Wire Line
+	8600 3400 8850 3400
+Wire Wire Line
+	8600 3500 8850 3500
 Wire Wire Line
 	11400 3850 11400 2750
 Wire Wire Line
@@ -850,7 +843,6 @@ Text Label 10650 4750 0    50   ~ 0
 row3
 Text Label 10650 5150 0    50   ~ 0
 row4
-NoConn ~ 8600 3400
 Text Label 4600 2300 2    50   ~ 0
 row0
 Text Label 4600 2400 2    50   ~ 0
@@ -872,8 +864,6 @@ Wire Wire Line
 Wire Wire Line
 	4350 2700 4600 2700
 NoConn ~ 4350 3000
-NoConn ~ 8600 3800
-NoConn ~ 8600 3900
 Wire Wire Line
 	7000 2900 7200 2900
 Text Notes 4100 9700 0    100  ~ 0
@@ -980,17 +970,6 @@ F 3 "" H 13250 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR08
-U 1 1 5C8C4CC8
-P 7150 2550
-F 0 "#PWR08" H 7150 2400 50  0001 C CNN
-F 1 "+5V" H 7150 2690 50  0000 C CNN
-F 2 "" H 7150 2550 50  0001 C CNN
-F 3 "" H 7150 2550 50  0001 C CNN
-	1    7150 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR09
 U 1 1 5C7E7653
 P 7150 4850
@@ -1021,17 +1000,6 @@ F 1 "GND" H 7900 4700 50  0000 C CNN
 F 2 "" H 7900 4850 50  0001 C CNN
 F 3 "" H 7900 4850 50  0001 C CNN
 	1    7900 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Interface_Expansion:MCP23017_SO U2
-U 1 1 5C6D2688
-P 7900 3700
-F 0 "U2" H 7450 4650 50  0000 C CNN
-F 1 "MCP23017_SO" V 7900 3700 50  0000 C CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 8100 2700 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 8100 2600 50  0001 L CNN
-	1    7900 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1904,12 +1872,12 @@ sck
 Text Label 4600 3300 2    50   ~ 0
 sda
 Wire Wire Line
-	8600 2900 8850 2900
-Text Label 8850 2900 2    50   ~ 0
+	8600 3800 8850 3800
+Text Label 8850 3800 2    50   ~ 0
 row0
 Wire Wire Line
-	8600 3000 8850 3000
-Text Label 8850 3000 2    50   ~ 0
+	8600 3900 8850 3900
+Text Label 8850 3900 2    50   ~ 0
 row1
 Wire Wire Line
 	2750 3400 2700 3400
@@ -2006,7 +1974,7 @@ Wire Wire Line
 	4350 3400 4600 3400
 Text Label 4600 3400 2    50   ~ 0
 col0
-Text Label 8850 3100 2    50   ~ 0
+Text Label 8850 4000 2    50   ~ 0
 row2
 $Comp
 L Mechanical:MountingHole H1
@@ -2227,4 +2195,20 @@ Wire Wire Line
 Connection ~ 5000 3300
 Wire Wire Line
 	5000 3300 5250 3300
+$Comp
+L Interface_Expansion:TCA9555DBR U2
+U 1 1 5D691C02
+P 7900 3700
+F 0 "U2" H 7400 4650 50  0000 L CNN
+F 1 "PCA9555D" V 7900 3700 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 8950 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9555.pdf" H 7400 4600 50  0001 C CNN
+	1    7900 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8600 2900
+NoConn ~ 8600 3000
+NoConn ~ 8600 4300
+NoConn ~ 8600 4400
+NoConn ~ 8600 4500
 $EndSCHEMATC
