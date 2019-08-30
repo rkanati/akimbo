@@ -1452,22 +1452,12 @@ F 3 "" H 3325 3300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3325 3300 3325 3200
-Text Notes 11825 10400 0    250  Italic 50
+Text Notes 11950 10400 0    250  Italic 50
 AKIMBO!
 Wire Notes Line width 48 style solid
-	11825 10450 13275 10450
-Text Notes 13395 10400 0    75   ~ 0
+	11950 10450 13400 10450
+Text Notes 13520 10400 0    75   ~ 0
 PROTOTYPE
-Text Notes 12960 11070 0    50   ~ 0
-2019-08-28
-Text Notes 11995 10670 0    50   ~ 0
-1
-Text Notes 12105 10670 0    50   ~ 0
-1
-Text Notes 14365 10070 0    50   Italic 0
-© 2019 Rachel K
-Text Notes 14365 10160 0    50   ~ 0
-https://github.com/rkanati/akimbo.git
 Wire Notes Line style solid rgb(132, 0, 0)
 	14325 9960 14325 10570
 Text Notes 14365 10530 0    50   ~ 0
@@ -2453,4 +2443,8 @@ Wire Wire Line
 	5250 7350 5250 7525
 Text Notes 5500 7325 0    50   ~ 0
 Decoupling\nPlace near U1/U2 footprint
+Text Notes 14365 10160 0    50   ~ 0
+https://github.com/rkanati/akimbo.git
+Text Notes 14365 10070 0    50   Italic 0
+© 2019 Rachel K
 $EndSCHEMATC
